@@ -30,8 +30,6 @@ KBO 팬과 팬이 아닌 사용자 모두가 즐길 수 있는 KBO 통합 서비
  - ### ⚾ 나의 KBO 팀 찾기
    * 나의 성격 또는 취향과 어울리는 KBO팀 찾기 기능
        
-<br><br>
-
 ## 🌟 Stacks
  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/MySql-4479A1?style=for-the-badge&logo=MySql&logoColor=white"> 
 <br><br>
