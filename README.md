@@ -1,5 +1,5 @@
 # ⚾ 우리는 크보에 죽고 크보에 산다
-### 스윙 컴포넌트를 이용한 KBO 통합 서비스 프로그램
+### 자바 스윙 컴포넌트를 이용한 KBO 통합 서비스 프로그램
 <br>
 
 ## 🌟 프로젝트 소개
@@ -60,3 +60,4 @@ KBO 팬과 팬이 아닌 사용자 모두가 즐길 수 있는 KBO 통합 서비
 ![image](https://github.com/mmije0ng/KBOIntegrationService/assets/127730905/fe5cf0a0-4dce-46d3-9851-a4cc07ff14a7)
 
 ## 🖥 시연 영상
+https://github.com/mmije0ng/KBOIntegrationService/assets/127730905/3cd13014-5834-4c97-85e8-5be56d8af281
