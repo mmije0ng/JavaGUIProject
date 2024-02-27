@@ -266,13 +266,13 @@ class KboMainPanel extends JPanel implements ActionListener, LabelSet {
         String typed = e.getActionCommand();
         switch(typed) {
             case "로그인":
-                String userName=loginPanel.getUserField().getText();
-                String pass=loginPanel.getPassField().getText();
-                if(userName.equals("") || pass.equals(""))
+                String loginId=loginPanel.getUserField().getText();
+                String loginPassword=loginPanel.getPassField().getText();
+                if(loginId.equals("") || loginPassword.equals(""))
                     return;
                 removeAll();
 
-                boolean login=jdbc.login(userName,pass);
+                boolean login=jdbc.login(loginId,loginPassword);
                 if(login){
                     isMain=true;
                     user=loginPanel.getUserField().getText();
@@ -288,15 +288,15 @@ class KboMainPanel extends JPanel implements ActionListener, LabelSet {
                 break;
 
             case "회원 가입":
-                String userId=loginPanel.getUserField().getText();
-                String userPassword=loginPanel.getPassField().getText();
-                if(userId.equals("") || userPassword.equals(""))
+                String joinId=loginPanel.getUserField().getText();
+                String joinPassword=loginPanel.getPassField().getText();
+                if(joinId.equals("") || joinPassword.equals(""))
                     return;
 
                 removeAll();
                 setLoginPanel();
 
-                boolean isIdExist=jdbc.join(userId, userPassword);
+                boolean isIdExist=jdbc.join(joinId, joinPassword);
                 if(!isIdExist)
                     joinSuccessPanel.setText("회원 가입 완료");
 
