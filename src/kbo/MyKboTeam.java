@@ -11,7 +11,7 @@ class MyKboTeam extends JPanel implements LabelSet{
     private String name;
     private JButton resetButton; //다시 시작하기
 
-    private ImageIcon backgroundIcon = new ImageIcon("images/panel3.jpg");
+    private ImageIcon backgroundIcon = new ImageIcon(getClass().getResource("/images/panel3.jpg"));
     private Image backgroundImg = backgroundIcon.getImage();
     private Vector<Point> ballVector;
 
@@ -27,7 +27,7 @@ class MyKboTeam extends JPanel implements LabelSet{
     }
 
     private void setImageLabel() {
-        imageIcon=new ImageIcon("images/"+name+".jpg");
+        imageIcon=new ImageIcon(getClass().getResource("/images/"+name+".jpg"));
         image=imageIcon.getImage();
         image=image.getScaledInstance(200,200,Image.SCALE_SMOOTH);
         imageIcon=new ImageIcon(image);

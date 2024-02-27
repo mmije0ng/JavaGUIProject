@@ -121,7 +121,7 @@ class TodayPlayer extends JPanel implements LabelSet{
         setTodayPlayerIndex();
         todayPlayer=todayPlayerList.get(index);
 
-        imageIcon=new ImageIcon("images/"+todayPlayer.getPlayerName()+".jpg");
+        imageIcon=new ImageIcon(getClass().getResource("/images/"+todayPlayer.getPlayerName()+".jpg"));
         image=imageIcon.getImage();
         image=image.getScaledInstance(200,200,Image.SCALE_SMOOTH);
         imageIcon=new ImageIcon(image);

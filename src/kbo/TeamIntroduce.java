@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 class TeamIntroduce extends JPanel implements LabelSet{
-    private ImageIcon backgroundIcon = new ImageIcon("images/panel2.jpg");
+    private ImageIcon backgroundIcon = new ImageIcon(getClass().getResource("/images/panel2.jpg"));
     private Image backgroundImg = backgroundIcon.getImage();
 
     private String[] temp;
@@ -42,7 +42,7 @@ class TeamIntroduce extends JPanel implements LabelSet{
     }
 
     private void setImageLabel() {
-        imageIcon=new ImageIcon("images/"+name+".jpg");
+        imageIcon=new ImageIcon(getClass().getResource("/images/"+name+".jpg"));
         image=imageIcon.getImage();
         image=image.getScaledInstance(100,100,Image.SCALE_SMOOTH);
         imageIcon=new ImageIcon(image);

@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.util.Vector;
 
 class MyKboTeamPanel extends JPanel implements Runnable,LabelSet, ActionListener {
-    private ImageIcon icon = new ImageIcon("images/panel3.jpg");
+    private ImageIcon icon = new ImageIcon(getClass().getResource("/images/panel3.jpg"));
     private Image img = icon.getImage();
 
     private Vector<Point> ballVector = new Vector<>();

@@ -9,7 +9,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.*;
 
 class SearchTeamPanel extends JLabel implements ActionListener{
-    private ImageIcon icon = new ImageIcon("images/panel2.jpg");
+    private ImageIcon icon = new ImageIcon(getClass().getResource("/images/panel2.jpg"));
     private Image img = icon.getImage();
 
     private SearchTeam[] searchTeam;

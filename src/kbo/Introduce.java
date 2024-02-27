@@ -5,7 +5,8 @@ import java.awt.*;
 import javax.swing.*;
 
 class Introduce extends JLabel implements LabelSet{
-    private ImageIcon icon = new ImageIcon("images/panel1.jpg");
+    ClassLoader cl = this.getClass().getClassLoader();
+    private ImageIcon icon = new ImageIcon(getClass().getResource("/images/panel1.jpg"));
     private Image img = icon.getImage();
 
     private FlickerlingLabel introduce;

@@ -34,7 +34,7 @@ class MyKboTeamImage {
       teamImageLabels=new JLabel[size];
 
         for(int i=0;i<size;i++){
-            imageIcons[i]=new ImageIcon("images/"+teamName.getTeamNameByIndex(i)+".jpg");
+            imageIcons[i]=new ImageIcon(getClass().getResource("/images/"+teamName.getTeamNameByIndex(i)+".jpg"));
             images[i]= imageIcons[i].getImage();
             images[i]= images[i].getScaledInstance(100,100,Image.SCALE_SMOOTH);
             imageIcons[i]=new ImageIcon(images[i]);

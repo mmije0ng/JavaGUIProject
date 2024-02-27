@@ -36,7 +36,7 @@ class SearchTeam extends JLabel implements LabelSet {
     }
 
     private void setTeamImageLabel() {
-        imageIcon=new ImageIcon("images/"+name+".jpg");
+        imageIcon=new ImageIcon(getClass().getResource("/images/"+name+".jpg"));
         image=imageIcon.getImage();
         image=image.getScaledInstance(80,80,Image.SCALE_SMOOTH);
         imageIcon=new ImageIcon(image);

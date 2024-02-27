@@ -18,7 +18,7 @@ class KboMainPanel extends JPanel implements ActionListener, LabelSet {
     private JLabel joinSuccessPanel;
     private MyKeyListener myKeyListener;
 
-    private ImageIcon icon = new ImageIcon("images/panel1.jpg");
+    private ImageIcon icon = new ImageIcon(getClass().getResource("/images/panel1.jpg"));
     private Image img = icon.getImage();
 
     private boolean isMain=false;

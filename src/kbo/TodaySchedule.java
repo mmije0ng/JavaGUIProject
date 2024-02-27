@@ -118,7 +118,7 @@ class TodaySchedule extends JPanel implements LabelSet{
     }
 
     private void setTeamImage() {
-        team1ImageIcon=new ImageIcon("images/"+team1+".jpg");
+        team1ImageIcon=new ImageIcon(getClass().getResource("/images/"+team1+".jpg"));
         team1Image=team1ImageIcon.getImage();
         team1Image=team1Image.getScaledInstance(90,90,Image.SCALE_SMOOTH);
         team1ImageIcon=new ImageIcon(team1Image);
@@ -126,7 +126,7 @@ class TodaySchedule extends JPanel implements LabelSet{
         team1ImageLabel=new JLabel(team1ImageIcon);
         team1ImageLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
-        team2ImageIcon=new ImageIcon("images/"+team2+".jpg");
+        team2ImageIcon=new ImageIcon(getClass().getResource("/images/"+team2+".jpg"));
         team2Image=team2ImageIcon.getImage();
         team2Image=team2Image.getScaledInstance(90,90,Image.SCALE_SMOOTH);
         team2ImageIcon=new ImageIcon(team2Image);
