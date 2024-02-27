@@ -27,8 +27,9 @@ KBO 팬과 팬이 아닌 사용자 모두가 즐길 수 있는 KBO 통합 서비
  - ### ⚾ 구단 살펴보기 탭
    * KBO 10개 구단 중 원하는 팀의 정보 확인
    * 뒤로 가기 또는 키보드의 backspace를 통해 이전 화면으로 돌아가기
- - ### ⚾ 나의 KBO 팀 찾기
+ - ### ⚾ 나의 KBO 팀 찾기 탭
    * 나의 성격 또는 취향과 어울리는 KBO팀 찾기 기능
+   * 스레드를 이용하여 공이 떨어지는 효과
        
 ## 🌟 Stacks
  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/MySql-4479A1?style=for-the-badge&logo=MySql&logoColor=white"> 
