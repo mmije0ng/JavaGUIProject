@@ -57,8 +57,8 @@ class TodayPlayer extends JPanel implements LabelSet{
         todayPlayerList.add(new Player("이정후","키움히어로즈","외야수"));
         todayPlayerList.add(new Player("고영표","kt위즈","투수"));
         todayPlayerList.add(new Player("배정대","kt위즈","외야수"));
-        todayPlayerList.add(new Player("류지혁","삼성히어로즈","내야수"));
-        todayPlayerList.add(new Player("오승환","삼성히어로즈","투수"));
+        todayPlayerList.add(new Player("류지혁","삼성라이온즈","내야수"));
+        todayPlayerList.add(new Player("오승환","삼성라이온즈","투수"));
         todayPlayerList.add(new Player("문동주","한화이글스","투수"));
         todayPlayerList.add(new Player("정은원","한화이글스","내야수"));
         todayPlayerList.add(new Player("최지훈","ssg랜더스","외야수"));

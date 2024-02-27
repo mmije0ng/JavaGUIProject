@@ -1,4 +1,6 @@
 package kbo;
+import kbo.*;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,7 +9,7 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.*;
 
-class KboMainPanel extends JPanel implements ActionListener, LabelSet{
+class KboMainPanel extends JPanel implements ActionListener, LabelSet {
     Login loginPanel;
     private JButton loginButton;
     private MyKeyListener myKeyListener;
@@ -194,7 +196,7 @@ class KboMainPanel extends JPanel implements ActionListener, LabelSet{
 
             //    g.setColor(Color.WHITE);
             g.setFont(new Font("Jokerman",Font.BOLD,20));
-            g.drawString("KBO Platform",550,800);
+            g.drawString("KBO service",550,800);
             g.setFont(new Font("맑은 고딕",Font.BOLD,20));
             g.drawString("에 오신 것을 환영합니다!",695,800);
         }

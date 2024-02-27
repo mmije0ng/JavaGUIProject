@@ -14,7 +14,7 @@ class Introduce extends JLabel implements LabelSet{
     public Introduce() {
         setLayout(new FlowLayout());
 
-        introduce=new FlickerlingLabel("KBO platform !",500);
+        introduce=new FlickerlingLabel("KBO service !",500);
         setLabel(introduce,Color.BLACK,Color.YELLOW);
 
         introduceByKorean=new JLabel("우리는 크보에 죽고 크보에 산다!");

@@ -1,4 +1,5 @@
 package kbo;
+
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,7 +15,7 @@ class KBOProject extends JFrame implements ActionListener, Runnable{
     private boolean isMain;
 
     KBOProject() {
-        setTitle("KBO platform");
+        setTitle("KBO service");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
 
@@ -42,7 +43,7 @@ class KBOProject extends JFrame implements ActionListener, Runnable{
 
     private JTabbedPane createTabbedPane() {
         JTabbedPane pane=new JTabbedPane();
-        pane.addTab("KBO platform",mainPanel);
+        pane.addTab("KBO service",mainPanel);
 
         pane.addTab("구단 살펴보기",searchTeamPanel);
         pane.addTab("나의 KBO 팀 찾기",myKboTeamPanel);
