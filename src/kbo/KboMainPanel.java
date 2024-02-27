@@ -1,5 +1,6 @@
 package kbo;
 import kbo.*;
+import kbo.db.JDBC;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,8 +11,11 @@ import java.awt.event.KeyEvent;
 import javax.swing.*;
 
 class KboMainPanel extends JPanel implements ActionListener, LabelSet {
+    JDBC jdbc;
     Login loginPanel;
     private JButton loginButton;
+    private JButton joinButton;
+    private JLabel joinSuccessPanel;
     private MyKeyListener myKeyListener;
 
     private ImageIcon icon = new ImageIcon("images/panel1.jpg");
@@ -46,6 +50,8 @@ class KboMainPanel extends JPanel implements ActionListener, LabelSet {
     }
 
     private void setLoginPanel() {
+        jdbc=new JDBC();
+
         introduceKBO=new Introduce();
         introduceKBO.setSize(320,60);
         introduceKBO.setLocation(590,22);
@@ -64,13 +70,24 @@ class KboMainPanel extends JPanel implements ActionListener, LabelSet {
 
         loginButton=new JButton("로그인");
         loginButton.setSize(120,40);
-        loginButton.setLocation(670,360);
+        loginButton.setLocation(590,360);
         loginButton.addActionListener(this);
+
+        joinButton=new JButton("회원 가입");
+        joinButton.setSize(120,40);
+        joinButton.setLocation(750,360);
+        joinButton.addActionListener(this);
+
+        joinSuccessPanel=new JLabel();
+        joinSuccessPanel.setSize(300,40);
+        joinSuccessPanel.setLocation(700,150);
 
         add(introduceKBO);
         add(clockThread);
         add(loginPanel);
         add(loginButton);
+        add(joinButton);
+        add(joinSuccessPanel);
 
         repaint();
     }
@@ -254,10 +271,38 @@ class KboMainPanel extends JPanel implements ActionListener, LabelSet {
                 if(userName.equals("") || pass.equals(""))
                     return;
                 removeAll();
-                setMainPanel();
-                isMain=true;
-                user=loginPanel.getUserField().getText();
-                setMyLoginLabel();
+
+                boolean login=jdbc.login(userName,pass);
+                if(login){
+                    isMain=true;
+                    user=loginPanel.getUserField().getText();
+                    setMyLoginLabel();
+                    setMainPanel();
+                }
+
+                else{
+                    setLoginPanel();
+                    joinSuccessPanel.setText("로그인 실패");
+                }
+
+                break;
+
+            case "회원 가입":
+                String userId=loginPanel.getUserField().getText();
+                String userPassword=loginPanel.getPassField().getText();
+                if(userId.equals("") || userPassword.equals(""))
+                    return;
+
+                removeAll();
+                setLoginPanel();
+
+                boolean isIdExist=jdbc.join(userId, userPassword);
+                if(!isIdExist)
+                    joinSuccessPanel.setText("회원 가입 완료");
+
+                else
+                    joinSuccessPanel.setText("회원 가입 실패");
+
                 break;
 
             case "오늘의 선수 보기":
