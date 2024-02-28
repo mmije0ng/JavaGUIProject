@@ -6,15 +6,6 @@
 KBO 팬과 팬이 아닌 사용자 모두가 즐길 수 있는 KBO 통합 서비스 프로그램 입니다. JAVA의 GUI 프로그래밍을 이용하여 화면을 구성하고 JDBC 프로그래밍을 통해 사용자 정보를 관리합니다.
 <br><br>
 
-## 🌟 배포
-out/artifacts/KBOIntegrationService_jar 폴더로 가셔서 jar 파일을 다운 받으신 후 <br>
-```bash
-java -jar KBOIntegrationService.jar
-```
-jar 파일이 위치한 폴더에서 명령어를 실행하시면 됩니다. <br>
-신규 사용자이시면 회원 가입 후 로그인 하시면 되고 기존 사용자이시면 바로 로그인 하시면 됩니다.
-<br><br>
-
 ## 🌟 개발기간
 2024.01.12 ~ 2024.01.23
 <br><br>
