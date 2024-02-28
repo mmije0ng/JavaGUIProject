@@ -11,7 +11,8 @@ out/artifacts/KBOIntegrationService_jar 폴더로 가셔서 jar 파일을 다운
 ```bash
 java -jar KBOIntegrationService.jar
 ```
-jar 파일이 위치한 폴더에서 명령어를 실행하시면 됩니다.
+jar 파일이 위치한 폴더에서 명령어를 실행하시면 됩니다. <br>
+신규 사용자이시면 회원 가입 후 로그인 하시면 되고 기존 사용자이시면 바로 로그인 하시면 됩니다.
 <br><br>
 
 ## 🌟 개발기간
